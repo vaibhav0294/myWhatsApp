@@ -1,0 +1,319 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Font Awesome CSS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css">
+
+
+  <link rel="shortcut icon " href="Images/logo.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+
+  <title>WhatsApp</title>
+
+
+</head>
+
+<body onload="myFunction()">
+
+  <div class="row no-gutters">
+
+    <!-- ********************************************** Main Page ****************************************************-->
+
+    <div id="mainPage" class="col-12 col-sm-4 red">
+
+      <div class="top">
+        <div class="row">
+          <div id="sideBar" class="offset-7">
+            <ul>
+              <li>New group</li>
+              <li>Profile</li>
+              <li>Archived</li>
+              <li>Starred</li>
+              <li>Settings</li>
+              <li>Logout</li>
+            </ul>
+          </div>
+          <div class="col-6 vertical-align">
+            <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65" onclick="displayProfile()">
+          </div>
+          <div class="col-6">
+            <div class="page-top offset-3">
+              <i class="fas fa-circle-notch"></i>
+              <i class="fi-comment offset-2"></i>
+              <i onclick="displayMenu()" class="fas fa-ellipsis-v offset-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search">
+        <div class="row">
+          <div class="col-11 ">
+            <form role="search">
+              <div class="form-group ">
+                <input type="text" class="form-control form-control-sm margin1 " aria-describedby="emailHelp" placeholder=" Search or start new chat">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="thin-bar1"></div>
+
+      <div id="page">
+        <div class="row" id="row1" onclick="displayChat(1)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body">
+                  <p class="user-name margin">
+                    <name>Rahul</name>
+                    <span>11:45 AM</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                    <span>1</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+
+        <div class="row" id="row2" onclick="displayChat(2)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body">
+                  <p class="user-name margin">
+                    <name >Kunal</name>
+                    <span class="read">11:45 AM</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+        <div class="row" id="row3" onclick="displayChat(3)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body">
+                  <p class="user-name margin">
+                    <name>Niraj</name>
+                    <span>11:45 AM</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                    <span>3</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+
+        <div class="row" id="row4" onclick="displayChat(4)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body">
+                  <p class="user-name margin">
+                    <name>Neeraj</name>
+                    <span>11:45 AM</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                    <span>5</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+
+        <div class="row" id="row5" onclick="displayChat(5)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body" >
+                  <p class="user-name margin">
+                    <name >Gaurav</name>
+                    <span class=" read">Yesterday</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+
+        <div class="row" id="row6" onclick="displayChat(6)">
+          <div class="single-chat">
+            <div class="col-12">
+              <div class="media">
+                <div class="media-left">
+                  <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65">
+                </div>
+                <div class="media-body">
+                  <p class="user-name margin ">
+                    <name>Vaibhav</name>
+                    <span class='read'>Saturday</span>
+                  </p>
+                  <p class="chat-content margin">Yeah man, let's meet up at...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-2 thin-bar"></div>
+      </div>
+    </div>
+
+    <!-- ********************************************** Profile Page ****************************************************-->
+
+    <div id="profile">
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-12">
+          <div class="profile-top">
+            <a href="#">
+              <i class="fas fa-arrow-left" onclick="displayMainPage()"></i>
+            </a>
+            <span>
+              <h3>Profile</h3>
+            </span>
+          </div>
+          <div class="pic " style="text-align: center">
+            <div id="img-section">
+              <img class="margin_top img-circle" src="Images/panda.jpg" alt=panda width="230">
+            </div>
+
+          </div>
+          <div class="your-name">
+            Your Name
+            <p>Viraj
+              <i style="float: right" class="fas fa-pencil-alt"></i>
+            </p>
+          </div>
+
+          <div class="describe">
+            This is not your username or pin. This name will be visible to your WhatsApp contacts.
+
+          </div>
+          <div class="about">
+            About
+            <p>Life is tough, but so you are !
+              <i style="float: right" class="fas fa-pencil-alt"></i>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ********************************************** Chat Page ****************************************************-->
+
+    <div class="col-12 col-sm-8 chat-section">
+      <img id="myImage" src="Images/WhatsApp-Web1.png" class="img-responsive" width="100%" height="100%">
+
+      <div id="chatPage">
+        <div class="row no-gutters">
+          <div class="col-6">
+            <div class="chatPage-top">
+              <img class="img-circle" src="Images/panda.jpg" class="media-object" alt=panda width="65" onclick="displayProfile()">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="chatPage-top">
+              <div class="icons">
+                <i class="fas fa-search offset-7"></i>
+                <i class="fas fa-paperclip offset-1"></i>
+                <i class="fas fa-ellipsis-v offset-1"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="chatPage-middle">
+
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-1">
+            <div class="chatPage-top">
+              <div class="icons">
+                <i class="far fa-smile"></i>
+              </div> 
+            </div>
+          </div>
+          <div class="chatPage-top col-10" id="textBox">
+              <input type="text" class="form-control " aria-describedby="emailHelp" placeholder="Type a message">
+          </div>
+          <div class="col-1">
+            <div class="chatPage-top">
+              <div class="icons">
+                <i class="fas fa-video"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="working.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
